@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Warmup - User Profile</title>
+  <meta charset="utf-8">
+  <script src="/js/jquery-1.11.0.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css">
+     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+  <div class="content">
+
+<div class="header">
+  <center>
+  <a href="profile" class="logo">User Profile</a></center>
+</div>
+
+{{#each users}}
+<div class="data">
+  <div class="size1"><center>
+  Welcome {{name}}.</center></div>
+ <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p class="size2"><label for="file" style="cursor: pointer;">Click to upload a profile picture</label></p>
+<p><img id="output" width="200" /></p>
+  <div class="left">
+<script>
+var loadFile = function(event) {
+  var image = document.getElementById('output');
+  image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script></div>
+<div class="size3">
+  <p><ul><li>Gender: {{gender}}</li>
+  <li>Height: {{height}}</li>
+<li>Weight: {{weight}}</li></ul>
+</p>
+</div></div>
+{{/each}}
+
+<center>
+ <a href="edit" class="size2"><button>Edit Profile</button></a>
+</center>
+<div class="push"></div>
+</div>
+
+<div class="navbar">
+  <a href="home"><i class="fa fa-fw fa-home"></i></a>
+  <a href="search"><i class="fa fa-fw fa-search"></i></a>
+  <!-- <a href="calendar"><i class="fa fa-calendar"></i></a> -->
+  <a href="profile"><i class="fas fa-fw fa-user"></i></a>
+</div>
+</body>
+</html>

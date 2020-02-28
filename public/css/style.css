@@ -1,0 +1,177 @@
+html, body {
+  height: 100%;
+  margin:0;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  width: 100%;
+  /*background-color: #f1f1f1;*/
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+/* Style the header links */
+.header a {
+  width: 100%;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+body{
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+h3, h2, p{
+text-align: center;
+font-family: 'Muli', sans-serif;
+font-weight: 600;
+}
+
+h3{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 2em;
+  font-weight: 600;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.b {
+  margin: 10px 0px;
+  opacity: 0.4;
+  width: 50%;
+  height: auto;
+  left: 25%;
+  position: relative;
+}
+
+.container{
+  position: relative;
+  display: block;
+  white-space: nowrap;
+}
+
+.center{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*.center a{
+  color:black;
+}*/
+
+#clear {
+  clear:right;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  border-color: black;
+}
+
+
+/* Footer */
+.navbar {
+  position: fixed;
+  border-radius: 25px;
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position: fixed;
+}
+
+/* Navigation links */
+.navbar a {
+  border-radius: 25px;
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+  /*width: 25%*/
+  width: 33.33%; 
+  text-align: center; 
+}
+
+a:hover h2{
+  color: rgb(43, 43, 43);
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+form{
+
+  /*padding: 40px;*/
+  display: inline-block;
+  height: 10%;
+  width: 50%;
+  margin: 20px;
+}
+
+iframe{
+  right: 300px;
+  padding: 20px;
+  margin: auto;
+}
+
+.left {
+  position: absolute;
+}
+
+.content{
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.push{
+  height: 100px;
+}
+
+.size1{
+  font-size: 32px;
+}
+
+.size2{
+  font-size: 16px;
+}
+.size3{
+  font-size: 20px;
+}
+
+.post-title{
+  float:left;
+  border-radius: 20px;
+  overflow: hidden;
+}

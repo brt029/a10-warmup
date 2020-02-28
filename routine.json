@@ -1,0 +1,40 @@
+{
+	"routines": 
+	[
+		{
+			"id": 1,
+			"title": "Intro to Cardio",
+			"link": "cardio",
+			 "summary": "Cardio exercise is a healthy way to take care of your heart, lungs and body.",
+			 "image": "https://www.quickanddirtytips.com/sites/default/files/styles/article_main_image/public/images/12691/cardio-compressor.png?itok=Gx1P0og1"
+		},
+		{
+			"id": 2,
+			"title": "Basic Routines",
+			"link": "basic",
+			"summary": "These routines are a good starting point for beginners looking to exercise.",
+			"image": "https://barbend.com/wp-content/uploads/2019/04/Push-Up-Guide-1024x604.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Intro to Weight lifting",
+			"link": "weightlift",
+			"summary": "This page will educate proper technique with weights for safety & better improvement.",
+			"image": "https://www.mensjournal.com/wp-content/uploads/mf/_main_liftlift.jpg?w=1200&h=1200&crop=1"
+		},
+		{
+			"id": 4,
+			"title": "Leg Routines",
+			"link": "leg",
+			"summary": "These routines will show you several ways to exercise different muscles in the leg.",
+			"image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mindset-is-everything-royalty-free-image-1571082203.jpg?crop=0.667xw:1.00xh;0.162xw,0&resize=480:*"
+		},
+		{
+			"id": 5,
+			"title": "Killer Cardio Routines",
+			"link": "killer",
+			"summary": "If you are prepared for higher level cardio routines, find out complex routines here.",
+			"image": "https://i.insider.com/5da1a3ddcc4a0a79db630ae3?width=1100&format=jpeg&auto=webp"
+		} 
+	]
+}

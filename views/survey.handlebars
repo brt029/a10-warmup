@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html>
+
+<div class="container">
+<head>
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<title>WarmUp Survey</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<form id="createProfile" role="form" method="get" action="/add">
+		<h3>Creating Profile...</h3>
+
+    	<div class="form-group">
+<label for="email"><b>Email</b></label>
+<br>
+        <input type="text" class="form-control" placeholder="Enter Email" name="email" required>
+      </div>
+
+    	<div class="form-group">
+      <label for="username"><b>Username</b></label>
+      <br>
+      <input type="text" class="form-control" placeholder="Enter Username" name="username" required>
+    </div>
+
+      	<div class="form-group">
+      <label for="password"><b>Password</b></label>
+      <br>
+      <input type="password" class="form-control" placeholder="Enter Password" name="password" required>
+    </div>
+
+	    <div class="form-group">
+	      <label for="name">Name:</label>
+	      <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+	    </div>
+
+	    <div class="form-group">
+	      <label for="gender">Gender:</label>
+	      <input type="text" class="form-control" id="gender" placeholder="Gender" name="gender">
+	    </div>
+
+	    <div class="form-group">
+	      <label for="height">Height:</label>
+	      <input type="text" class="form-control" id="height" placeholder="Height (ft)" name="height">
+	    </div>
+
+<div class="form-group">
+	      <label for="weight">Weight:</label>
+	      <input type="text" class="form-control" id="weight" placeholder="Weight (lbs)" name="weight">
+	    </div>
+
+  <div class="form-group">
+	      <label for="confident">How confident are you?</label>
+	      <br>
+	      <select id="select1">
+	      	<option value="confident">Confident</option>
+	      	<option value="not">Not confident</option>
+	      	<option value="very">Very confident</option>
+	      </select>
+	    </div>
+
+	       <div class="form-group">
+	      <label for="days">How many days a week <br>do you plan on exercising?</label>
+	      <br>
+	        <select id="select2">
+	      	<option value="one">One</option>
+	      	<option value="two">Two</option>
+	      	<option value="three">Three</option>
+	      		<option value="four">Four</option>
+	      	<option value="five">Five</option>
+	      	<option value="six">Six</option>
+	      	<option value="seven">Seven</option>
+	      </select>
+	    </div>
+
+	       <div class="form-group">
+	      <label for="accomplish">What are you hoping<br> to accomplish in the gym?</label>
+	      <br>	        <select id="select3">
+	      	<option value="fit">Become more fit</option>
+	      	<option value="strong">Get stronger</option>
+	      	<option value="endurance">Increase endurance</option>
+	      </select>
+	    </div>
+
+	    <button type="submit">Create Account</button>
+	</form>
+	<script src="js/script.js"></script>
+</body>
+</div>
+</html>
