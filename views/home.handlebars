@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.css">
      <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script src="/js/introHCI.js"></script>
 </head>
 
 <body> 
@@ -28,7 +29,7 @@
       <div class="column" style="background-color:#aaa;" id="{{id}}"> 
         <div class="post-title">
       <img src="{{image}}" alt="exercises" width="70" height="58"></div>
-            <a href="/{{link}}">
+            <a class="linkCtr" href="/{{link}}">
             <h3>{{title}}</h3>
           </a>
           <div align="right">
@@ -41,29 +42,26 @@
 
 <div class="row">
   <div class="column" style="background-color:#aaa;" align="center">
-    <h3><a href="cardio">Intro to Cardio</a></h3>
+    <h3><a class="linkClick" href="cardio">Intro to Cardio</a></h3>
   </div>
 
   <div class="column" style="background-color:#bbb;" align="center">
-    <h3><a href="basic">Basic Routines</a></h3>
+    <h3><a class="linkClick" href="basic">Basic Routines</a></h3>
   </div>
 </div>
 
 <div class="row">
   <div class="column" style="background-color:#ccc;" align="center">
-    <h3><a href="weightlift">Intro to Weightlifting</a></h3>
+    <h3><a class="linkClick" href="weightlift">Intro to Weightlifting</a></h3>
   </div>
   <div class="column" style="background-color:#ddd;" align="center">
-    <h3><a href="leg">Leg Routines</a></h3>
+    <h3><a class="linkClick" href="leg">Leg Routines</a></h3>
   </div>
   <div class="column" style="background-color:#eee;" align="center">
-    <h3><a href="killer">Killer Cardio Routines</a></h3>
+    <h3><a class="linkClick" href="killer">Killer Cardio Routines</a></h3>
   </div>
 </div>
 {{/if}}
-
-<!-- <div style="display: none" id="username">{{username}}</div>
-<div style="display: none" id="testing">Hello</div> -->
 
 <div class="push"></div>
 </div>
@@ -73,19 +71,17 @@
   <a href="search"><i class="fa fa-fw fa-search"></i></a>
   <!-- <a href="calendar"><i class="fa fa-calendar"></i></a> -->
   <a href="profile"><i class="fas fa-fw fa-user"></i></a>
-  <!--a class="profile">-->
+
 </div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-158839153-1', 'auto');
+ga('require', 'GTM-PP5H7SK')
+ga('send', 'pageview');
+</script>
 </body>
 
-<!-- <script>
-  $(document).ready(function () {
-    var name = $("#testing").text();
-
-    $(".profile").click(function() {
-      $.get("profile", {"name": name}, function(data) {
-        console.log(data);
-      });
-    });
-  });
-</script> -->
 </html>
