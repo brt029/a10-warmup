@@ -5,11 +5,11 @@ $(document).ready(function() {
 function initializePage() {
 	$('.linkClick').click(function(e)
 	{
-		e.preventDefault();
+		// e.preventDefault();
 		ga("send", "event", "link", "click");
 	});
 	$('.linkCtr').click(function(e){
-		e.preventDefault();
+		// e.preventDefault();
 		ga("send", "event", "link", "click");
 	});
 }
