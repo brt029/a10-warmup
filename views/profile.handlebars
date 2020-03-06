@@ -19,15 +19,15 @@
 
 <div class="header">
   <center>
-  <a href="profile" class="logo">User Profile</a></center>
+  <a href="profile" class="logo">Profile</a></center>
 </div>
 
 {{#each users}}
 <div class="data">
   <div class="size1"><center>
-  Welcome {{name}}.</center></div>
+  Welcome {{name}}</center></div>
  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-<p class="size2"><label for="file" style="cursor: pointer;">Click to upload a profile picture</label></p>
+<p class="size2"><label for="file" style="cursor: pointer;"><button id="button">Upload a profile picture</button></label></p>
 <p><img id="output" width="200" /></p>
   <div class="left">
 <script>
@@ -45,7 +45,7 @@ var loadFile = function(event) {
 {{/each}}
 
 <center>
- <a href="edit" class="size2"><button>Edit Profile</button></a>
+ <a href="edit" class="size2"><button id="button">Edit Profile</button></a>
 </center>
 <div class="push"></div>
 </div>
