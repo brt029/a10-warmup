@@ -26,7 +26,13 @@ background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%)
 
 
 body{
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background: linear-gradient(#fbfcdb, #e9defa);
+  height: 100%;
+  /*min-height: 100%;*/
+  margin: 0;
+  /*background-repeat: no-repeat;*/
+  background-attachement: fixed;
+  /*background-size: contain;*/
   text-align: center;
   position: relative;
   display: block;
@@ -81,6 +87,10 @@ h2{
 /*.center a{
   color:black;
 }*/
+
+#button {
+	background-color: white;
+}
 
 #clear {
   clear:right;

@@ -14,18 +14,14 @@
 <body> 
     <div class="container">
 
-<h3>Welcome to WarmUp!</h3>
+<br><br><br><br><br><br><br><br>
+<center>
+<img src="/pics/warmuplogo.png" alt="Warm Up">
 
-</div>
-<br>
-<div class="container">
-<h3 class="center"> Login here:</h2>
-</div>
-<br>
 
 <br>
   <form method="get" action="/login">
-
+    {{!-- <center> --}}
     <div class="container">
       <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
@@ -34,13 +30,16 @@
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
     </div>
-    <div class="container">
-      <button type="Submit">Login</button>
+    
+    <div class="container"> 
+      <button id="button" type="Submit">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
+    {{!-- </center> --}}
+      
 
-
+{{!-- <center> --}}
   </form>
 {{#if incorrect}}
   {{#if wrongPassword}}
@@ -51,10 +50,11 @@
   {{/if}}
 {{/if}}
    <div class="container">
-    <a href="survey">Create An Account</a>
+    <a href="survey">New? Create An Account</a>
+{{!-- </center> --}}
   </div>
 
 </div>
-
+</center>
 </body>
 </html>
