@@ -4,28 +4,32 @@ html, body {
 }
 
 /* Style the header with a grey background and some padding */
+/*REMOVED*/
 .header {
   overflow: hidden;
   width: 100%;
-  /*background-color: #f1f1f1;*/
-/*background-image: linear-gradient(to top, #c4c5c7, #dcdddf, #ebebeb);*/
+  	/*background-color: #f1f1f1;*/
+	/*background-image: linear-gradient(to top, #c4c5c7, #dcdddf, #ebebeb);*/
 	/*background-color: #e9defa;*/
 }
 
 /* Style the header links */
+/* EXPLORE ROUTINES/Warmup/Profile header*/
 .header a {
   width: 100%;
   float: left;
-  color: black;
+  color: #413fb2;
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
+  font-family: georgia, serif; 
 }
 
-
+/*BACKGROUND COLOR*/
+/*need to fix gradient repeat*/
 body{
   background: linear-gradient(#fbfcdb, #e9defa);
   height: 100%;
@@ -72,6 +76,35 @@ h2{
 
 .container{
   position: relative;
+  /*text-align: center;*/
+  left: 15px;
+  display: block;
+  white-space: nowrap;
+}
+
+/*manually shift password line so it aligns w/ username line - INDEX */
+.containerpassword{
+  position: relative;
+  /*text-align: center;*/
+  right: -34px;
+  display: block;
+  white-space: nowrap;
+}
+
+/*manually shift login button and remember me - INDEX */
+.containerlogin{
+  position: relative;
+  /*text-align: center;*/
+  left: 65px;
+  display: block;
+  white-space: nowrap;
+}
+
+/*manually shift new? create an account line- INDEX */
+.containercreate{
+  position: relative;
+  /*text-align: center;*/
+  /*left: 1px;*/
   display: block;
   white-space: nowrap;
 }
@@ -85,10 +118,6 @@ h2{
 }
 
 
-/*.center a{
-  color:black;
-}*/
-
 #button {
 	background-color: white;
 }
@@ -98,36 +127,48 @@ h2{
 }
 
 /* Create two equal columns that floats next to each other */
+/* ROUTINE/CATEGORY */
 .column {
   float: left;
-  width: 100%;
+  width: 85%;
   padding: 10px;
-  margin: 20px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 25px;
-  border-color: gray;
+  /*margin: 20px;*/
+  margin-left: 40px; 
+  margin-right:40px;
+  margin-top:10px;
+  margin-bottom:15px;
+  border-left-style: solid;
+  border-width: 15px;
+  border-color: #c6c5e8;
+  /*border-radius: 25px;*/
+  
+}
+
+/*routine link color*/
+.column a{
+	color: #413fb2;
+	font-family: georgia, serif;
 }
 
 
-/* Footer */
+/* FOOTER */
 .navbar {
   position: fixed;
-  border-radius: 25px;
+  /*border-radius: 25px;*/
   width: 100%;
-  background-color: #555;
+  background-color: #c3c2dc;
   overflow: auto;
   position: fixed;
 }
 
 /* Navigation links */
 .navbar a {
-  border-radius: 25px;
+  /*border-radius: 2px;*/
   float: left;
-  padding: 12px;
-  color: white;
+  padding: 15px;
+  color: white; /* icons color*/
   text-decoration: none;
-  font-size: 36px;
+  font-size: 35px;
   /*width: 25%*/
   width: 33.33%; 
   text-align: center; 
