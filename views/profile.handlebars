@@ -17,12 +17,21 @@
 <body> 
   <div class="content">
 
-<div class="header">
+{{!-- <div class="header">
   <center>
   <a href="profile" class="logo">Profile</a></center>
+</div> --}}
+
+{{!-- <div id="headerBox">
+ <div class="data">
+  <div class="size1"><center>
+  Welcome {{name}}</center></div>
+ <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
 </div>
+</div> --}}
 
 {{#each users}}
+<br><br>
 <div class="data">
   <div class="size1"><center>
   Welcome {{name}}</center></div>
@@ -37,10 +46,15 @@ var loadFile = function(event) {
 };
 </script></div>
 <div class="size3">
-  <p><ul><li>Gender: {{gender}}</li>
-  <li>Height: {{height}}</li>
-<li>Weight: {{weight}}</li></ul>
-</p>
+  <p><ul>
+  <hr style ="margin-left:-10px"; width= "98%";>
+  Gender <span class="tab">{{gender}}</span><br>
+  <hr style ="margin-left:-10px"; width= "98%";>
+  Height <span class="tab">{{height}}</span><br>
+  <hr style ="margin-left:-10px"; width= "98%";>
+  Weight <span class="tab">{{weight}}</span><br>
+  <hr style ="margin-left:-10px"; width= "98%";>
+  </ul></p>
 </div></div>
 {{/each}}
 
