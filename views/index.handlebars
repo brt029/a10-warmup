@@ -17,29 +17,29 @@
 <br><br><br><br><br><br><br><br>
 <center>
 <img src="/pics/warmuplogo.png" alt="Warm Up">
+</center>
 
 
 <br>
   <form method="get" action="/login">
-    {{!-- <center> --}}
     <div class="container">
       <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
     </div>
-      <div class="container">
+
+    <div class="containerpassword">
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
     </div>
-    
-    <div class="container"> 
+
+    <div class="containerlogin"> 
       <button id="button" type="Submit">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-    {{!-- </center> --}}
+
       
 
-{{!-- <center> --}}
   </form>
 {{#if incorrect}}
   {{#if wrongPassword}}
@@ -49,12 +49,11 @@
     <p style="color: red">Could not find user.</p>
   {{/if}}
 {{/if}}
-   <div class="container">
+   <div class="containercreate">
     <a href="survey">New? Create An Account</a>
-{{!-- </center> --}}
   </div>
 
 </div>
-</center>
+
 </body>
 </html>
