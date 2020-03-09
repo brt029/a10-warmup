@@ -3,29 +3,45 @@ html, body {
   margin:0;
 }
 
-/* Style the header with a grey background and some padding */
-/*REMOVED*/
-.header {
+/*.headerProfile {
   overflow: hidden;
   width: 100%;
-  	/*background-color: #f1f1f1;*/
-	/*background-image: linear-gradient(to top, #c4c5c7, #dcdddf, #ebebeb);*/
-	/*background-color: #e9defa;*/
-}
+  background: #C3C2DC;
+  padding: 60px
+  color: white;
+  line-height: 60px;
+}*/
 
 /* Style the header links */
-/* EXPLORE ROUTINES/Warmup/Profile header*/
+/* Warmup/Profile header*/
 .header a {
   width: 100%;
   float: left;
   color: #413fb2;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
   text-decoration: none;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 18px;
   /*border-radius: 4px;*/
   font-family: georgia, serif; 
+  /*margin-top: 0;*/
+}
+
+/*separate header for 'explore routines' for spacing*/
+.headerExplore a {
+  width: 100%;
+  float: left;
+  color: #413fb2;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 18px;
+  /*border-radius: 4px;*/
+  font-family: georgia, serif; 
+  /*margin-top: 0;*/
 }
 
 /*BACKGROUND COLOR*/
@@ -51,11 +67,20 @@ font-weight: 600;
 
 h3{
   font-size: 2em;
+  color: #413fb2;
 }
 
 h2{
   font-size: 2em;
   font-weight: 600;
+}
+
+/*get started! - HOME*/
+h1{
+	color: #413fb2;
+	/*margin-bottom:0px;*/
+	font-weight: bold;
+	padding-top: 15px;
 }
 
 
@@ -120,6 +145,30 @@ h2{
 
 #button {
 	background-color: white;
+	font-family: georgia; 
+	color: #666666;
+}
+
+/*select option for 'how confident' - SURVEY*/
+#select1{
+	background-color: white; 
+}
+
+/*select option for 'how many days' - SURVEY*/
+#select2{
+	background-color: white; 
+}
+
+/*select option for 'what are you hoping to accomplish - SURVEY*/
+#select3{
+	background-color: white; 
+}
+
+/*COLORED HEADER/BOX ON PROFILE PAGE*/
+#headerBox{
+	width: 100%;
+	background-color: #C3C2DC;
+	padding: 110px; 
 }
 
 #clear {
@@ -137,10 +186,10 @@ h2{
   margin-right:40px;
   margin-top:10px;
   margin-bottom:15px;
-  border-left-style: solid;
+  /*border-left-style: solid;
   border-width: 15px;
-  border-color: #c6c5e8;
-  /*border-radius: 25px;*/
+  border-color: #c6c5e8;*/
+  border-radius: 5px;
   
 }
 
@@ -211,15 +260,24 @@ iframe{
   height: 100px;
 }
 
+/*Welcome 'name'*/
 .size1{
-  font-size: 32px;
+  font-size: 30px;
+  font-family: georgia;
+  color: #ffffff;
 }
 
+/*button 'upload a profile pic'*/
 .size2{
   font-size: 16px;
+  color: #666666;
 }
+
+/*'gender', 'height', 'weight'*/
 .size3{
-  font-size: 20px;
+  font-size: 16px;
+  font-family: georgia;
+  color: #6F6E85;
 }
 
 .post-title{
@@ -227,3 +285,12 @@ iframe{
   border-radius: 20px;
   overflow: hidden;
 }
+
+/*create space/tab ex: between 'gender' and '{gender} on PROFILE page*/
+.tab {
+	position: absolute;
+	left: 315px;
+}
+
+
+
