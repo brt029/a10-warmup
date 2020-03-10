@@ -102,7 +102,15 @@ h1{
 .container{
   position: relative;
   text-align: center;
-  left: 15px;
+  /*left: 15px;*/
+  display: block;
+  white-space: nowrap;
+}
+
+.containerUsername{
+  position: relative;
+  text-align: center;
+  left: -19px;
   display: block;
   white-space: nowrap;
 }
@@ -111,7 +119,7 @@ h1{
 .containerpassword{
   position: relative;
   /*text-align: center;*/
-  right: -34px;
+  left: -15px;
   display: block;
   white-space: nowrap;
 }
@@ -120,7 +128,7 @@ h1{
 .containerlogin{
   position: relative;
   /*text-align: center;*/
-  left: 65px;
+  /*left: 65px;*/
   display: block;
   white-space: nowrap;
 }
