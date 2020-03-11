@@ -337,7 +337,7 @@ iframe{
 /*create space/tab ex: between 'gender' and '{gender} on PROFILE page*/
 .tab {
 	position: absolute;
-	left: 315px;
+	left: 300px;
 }
 
 .profilePic {
@@ -348,7 +348,7 @@ iframe{
 }
 
 .profilePic img {
-	/*display: block;*/
+	display: block;
 	/*white-space: nowrap;*/
 }
 
