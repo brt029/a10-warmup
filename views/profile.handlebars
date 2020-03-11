@@ -22,29 +22,32 @@
   <a href="profile" class="logo">Profile</a></center>
 </div> --}}
 
-{{!-- <div id="headerBox">
- <div class="data">
-  <div class="size1"><center>
-  Welcome {{name}}</center></div>
- <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-</div>
-</div> --}}
-
-{{#each users}}
-<br><br>
-<div class="data">
+<div class="data"id="headerBox">
+ <div id = Headerbox>
   <div class="size1">
     <center>
-  Welcome {{name}}</center>
+      Welcome 
+      </center>
+  </div>
+</div>
+</div>
+
+{{#each users}}
+<br>
+  <p><img class= "profilePic" id="output" width="150"; height="150"; font-size=0/></p>
+<div class="data">
+  {{!-- <p><img class= "profileHeader" id="output" width="150"; height="150" /></p> --}}
+  <div class="sizeName">
+    <center>{{name}}</center>
   </div>
 <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
 </p>
 <p class="size2">
-  <button id="button"><label for="file" style="cursor: pointer;">
+  <button id="button"><label for="file" style="cursor: pointer;" >
     Upload a profile picture</label>
   </button>
   </p>
-<p><img id="output" width="200" /></p>
+{{!-- <p><img id="output" width="200" /></p> --}}
   <div class="left">
 <script>
 var loadFile = function(event) {

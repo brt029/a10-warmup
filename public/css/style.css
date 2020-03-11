@@ -184,6 +184,7 @@ ol li {
 	background-color: white;
 	font-family: georgia; 
 	color: #666666;
+	font-weight: normal;
 }
 
 /*select option for 'how confident' - SURVEY*/
@@ -202,11 +203,11 @@ ol li {
 }
 
 /*COLORED HEADER/BOX ON PROFILE PAGE*/
-/*#headerBox{
+#headerBox{
 	width: 100%;
 	background-color: #C3C2DC;
 	padding: 110px; 
-}*/
+}
 
 #clear {
   clear:right;
@@ -298,11 +299,20 @@ iframe{
   /*height: 100px;*/
 }
 
-/*Welcome 'name'*/
+/*Welcome*/
 .size1{
   font-size: 30px;
   font-family: georgia;
   color: #ffffff;
+
+}
+
+.sizeName{
+  font-size: 30px;
+  font-family: georgia;
+  color: #413FB2;
+  /*margin-top: 0;
+  top: 100px;*/
 }
 
 /*button 'upload a profile pic'*/
@@ -329,4 +339,16 @@ iframe{
 	position: absolute;
 	left: 315px;
 }
+
+.profilePic {
+	position: relative;
+	top: -110px;
+	/*white-space: nowrap;*/
+}
+
+.profilePic img {
+	/*display: inline-block;
+	white-space: nowrap;*/
+}
+
 
