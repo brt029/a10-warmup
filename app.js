@@ -38,8 +38,6 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-// app.get('/page_A', home.view);
-// app.get('/page_B', home.viewAlt);
 app.get('/add', add.addUser);
 app.get('/login', add.checkLogin);
 app.get('/survey', survey.view);
