@@ -22,6 +22,7 @@
         }
 
         data.exp = currentExp;
+        data.level = currentLevel;
 
         var expUntilNextLevel = Math.trunc(((currentLevel)*100) - currentExp);
         var expSinceLastLevel = Math.trunc(currentExp - ((currentLevel-1)*100));
