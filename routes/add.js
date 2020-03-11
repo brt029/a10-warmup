@@ -5,6 +5,7 @@ exports.addUser = function(request, response) { 
 	var email = request.query.email;
 	var username = request.query.username;
 	var password = request.query.password;
+	var exp = 0;
 	var gender = request.query.gender;
 	var height = request.query.height;
 	var weight = request.query.weight;

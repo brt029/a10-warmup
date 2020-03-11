@@ -1,48 +1,34 @@
 
 /*        - - - LEVEL SYSTEM - - -         */
+    // Get all of our user data
+    var data = require('../data.json');
 
-class Level{
-    constructor(currentExp){
-        this.currentExp = currentExp;
-        this.lvlUp = false;
-        calculateLevel(currentExp);
-        
-    }
-    calculateLevel(currentExp){
-        this.currentLevel = Math.cbrt(currentExp*(5/4));
-        this.expUntilNextLevel = (4*(Math.pow(3, currentLevel+1)/5)) - currentExp;
-        this.expSinceLastLevel = currentExp - (4*(Math.pow(3, currentLevel)/5));
-        this.totalExpUntilNextLevel = (4*(Math.pow(3, currentLevel+1)/5)) - (4*(Math.pow(3, currentLevel)/5));
-        this.percentUntilNextLevel = (int) ((this.expSinceLastLevel/this.totalExpUntilNextLevel)*100);
-    }
-  
-    getCurrentExp(){
-        return this.currentExp;
-    }
-
-    getCurrentLevel(){
-        return this.currentLevel;
-    }
-
-    getExpUntilNextLevel(){
-        return this.expUntilNextLevel;
-    }
-    
-    expGained(exp){
-        curLvl = this.currentLevel; 
-        this.currentExp += exp;
-        calculateLevel(this.currentExp);
-        if(curLvl != this.currentLevel) this.lvlUp = true;
-    }
-
-    displayLevel(){
-        console.log("You currently have " + this.expSinceLastLevel + ".");
-        console.log("You have " + this.expUntilNextLevel + " left to go.");
-        if(!this.lvlUp){
-            console.log("You are " + this.percentUntilNextLevel + "% of the way there.");
+    exports.calculateLevel = function(request, response){
+        // var currentExp = parseInt(data.exp, 10);
+        var expGained = 35;
+        var currentExp = data.exp; //fix
+        console.log(data.exp);
+        if(!currentExp){
+             currentExp = 0; 
+             data.exp = 0;
         }
-        else{
-            console.log("You are now Level " + this.currentLevel + "! Congrats!!");
-        } 
+        var lvlUp = false;
+        var currentLevel = Math.trunc((currentExp * 0.01)+1);
+        currentExp += expGained;
+      
+        if(currentExp >= (currentLevel)*100){
+            currentLevel = Math.trunc((currentExp*0.01)+1);
+            lvlUp = true;
+        }
+
+        data.exp = currentExp;
+
+        var expUntilNextLevel = Math.trunc(((currentLevel)*100) - currentExp);
+        var expSinceLastLevel = Math.trunc(currentExp - ((currentLevel-1)*100));
+        var totalExpUntilNextLevel = Math.trunc(((currentLevel)*100) - ((currentLevel-1)*100));
+        var percentUntilNextLevel = Math.trunc((expSinceLastLevel/totalExpUntilNextLevel)*100);
+
+        response.render('level', {"currentLevel": currentLevel, "expUntilNextLevel": expUntilNextLevel, "expSinceLastLevel": expSinceLastLevel, 
+        "percentUntilNextLevel": percentUntilNextLevel, "lvlUp": lvlUp, "totalExpUntilNextLevel": totalExpUntilNextLevel});
+
     }
-}

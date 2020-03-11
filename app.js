@@ -47,9 +47,7 @@ app.get('/profile', profile.view);
 app.get('/edit', edit.view);
 app.get('/editUser', edit.editUser);
 
-app.get('/level', function (req, res) {
-	res.render('level');
-});
+app.get('/level', level.calculateLevel);
 app.get('/basic', function (req, res) {
 	res.render('basicroutines');
 });
