@@ -33,10 +33,17 @@
 {{#each users}}
 <br><br>
 <div class="data">
-  <div class="size1"><center>
-  Welcome {{name}}</center></div>
- <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-<p class="size2"><label for="file" style="cursor: pointer;"><button id="button">Upload a profile picture</button></label></p>
+  <div class="size1">
+    <center>
+  Welcome {{name}}</center>
+  </div>
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+</p>
+<p class="size2">
+  <button id="button"><label for="file" style="cursor: pointer;">
+    Upload a profile picture</label>
+  </button>
+  </p>
 <p><img id="output" width="200" /></p>
   <div class="left">
 <script>
@@ -45,6 +52,7 @@ var loadFile = function(event) {
   image.src = URL.createObjectURL(event.target.files[0]);
 };
 </script></div>
+
 {{!-- GENDER/HEIGHT/WEIGHT INFO HERE --}}
 <div class="size3">
   <p><ul>
