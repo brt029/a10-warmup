@@ -344,11 +344,17 @@ iframe{
 	position: relative;
 	top: -110px;
 	/*white-space: nowrap;*/
+	/*font-size: 0;*/
 }
 
 .profilePic img {
-	/*display: inline-block;
-	white-space: nowrap;*/
+	/*display: block;*/
+	/*white-space: nowrap;*/
+}
+
+.profileInfo {
+	position:relative;
+	top: -100px;
 }
 
 
