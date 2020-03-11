@@ -12,7 +12,7 @@ var survey = require('./routes/survey');
 var profile = require('./routes/profile');
 var edit = require('./routes/edit');
 var level = require('./routes/level');
-var home = require('./routes/home');
+// var home = require('./routes/home');
 
 var app = express();
 
@@ -38,8 +38,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/page_A', home.view);
-app.get('/page_B', home.viewAlt);
+// app.get('/page_A', home.view);
+// app.get('/page_B', home.viewAlt);
 app.get('/add', add.addUser);
 app.get('/login', add.checkLogin);
 app.get('/survey', survey.view);
@@ -56,9 +56,9 @@ app.get('/basic', function (req, res) {
 app.get('/beginner', function (req, res) {
 	res.render('beginner');
 });
-app.get('/calendar', function (req, res) {
-	res.render('calendar');
-});
+// app.get('/calendar', function (req, res) {
+// 	res.render('calendar');
+// });
 app.get('/cardio', function (req, res) {
 	res.render('cardio');
 });
