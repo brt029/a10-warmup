@@ -45,6 +45,23 @@ html, body {
   /*margin-top: 0;*/
 }
 
+#headerSearch{
+	width: 100%;
+	background-color: #C3C2DC;
+	padding-top: 85px;
+	padding-bottom:75px;
+	font-family:georgia;
+	color: #ffffff;
+	font-size: 30px;
+}
+
+/*COLORED HEADER/BOX ON PROFILE PAGE*/
+#headerBox{
+	width: 100%;
+	background-color: #C3C2DC;
+	padding: 100px; 
+}
+
 /*BACKGROUND COLOR*/
 /*need to fix gradient repeat*/
 body{
@@ -136,6 +153,15 @@ ol li {
   white-space: nowrap;
 }
 
+.containerSearch{
+  position: relative;
+  text-align: center;
+  /*left: 15px;*/
+  margin-top: -57px;
+  display: block;
+  white-space: nowrap;
+}
+
 .containerUsername{
   position: relative;
   text-align: center;
@@ -200,13 +226,6 @@ ol li {
 /*select option for 'what are you hoping to accomplish - SURVEY*/
 #select3{
 	background-color: white; 
-}
-
-/*COLORED HEADER/BOX ON PROFILE PAGE*/
-#headerBox{
-	width: 100%;
-	background-color: #C3C2DC;
-	padding: 110px; 
 }
 
 #clear {
@@ -327,6 +346,7 @@ iframe{
   font-family: georgia;
   color: #6F6E85;
 }
+
 
 .post-title{
   float:left;
