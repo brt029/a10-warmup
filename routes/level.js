@@ -4,13 +4,13 @@
     var data = require('../data.json');
 
     exports.calculateLevel = function(request, response){
-        // var currentExp = parseInt(data.exp, 10);
+
         var expGained = 35;
-        var currentExp = data.exp; //fix
-        console.log(data.exp);
+        var currentExp = data.users[0].exp; //fix
+        console.log(data.users[0].exp);
         if(!currentExp){
              currentExp = 0; 
-             data.exp = 0;
+             data.users[0].exp = 0;
         }
         var lvlUp = false;
         var currentLevel = Math.trunc((currentExp * 0.01)+1);
@@ -21,8 +21,8 @@
             lvlUp = true;
         }
 
-        data.exp = currentExp;
-        data.level = currentLevel;
+        data.users[0].exp = currentExp;
+        data.users[0].level = currentLevel;
 
         var expUntilNextLevel = Math.trunc(((currentLevel)*100) - currentExp);
         var expSinceLastLevel = Math.trunc(currentExp - ((currentLevel-1)*100));

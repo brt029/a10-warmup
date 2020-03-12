@@ -35,7 +35,7 @@
 {{#each users}}
 <br>
   <p><img class= "profilePic" id="output" width="150"; height="150"; font-size=0/></p>
-<div class=profileInfo>
+<div class="profileInfo">
 <div class="data">
   {{!-- <p><img class= "profileHeader" id="output" width="150"; height="150" /></p> --}}
   <div class="sizeName">
@@ -43,6 +43,9 @@
   </div>
 <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
 </p>
+
+<h3>Level {{level}}</h3>
+
 <p class="size2">
   <button id="button"><label for="file" style="cursor: pointer;" >
     Upload a profile picture</label>
@@ -70,8 +73,6 @@ var loadFile = function(event) {
   </ul></p>
 </div></div>
 {{/each}}
-
-<h3>Level {{level}}</h3>
 
 <center>
  <a href="edit" class="size2"><button id="button">Edit Profile</button></a>
