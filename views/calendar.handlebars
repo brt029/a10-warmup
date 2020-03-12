@@ -13,17 +13,24 @@
 
 <body>
   <div class="content">
-    <h1 style="text-align:center;">Your Calendar</h1>
-    <h2>Your calendar is looking pretty empty! Try out some routines to get the ball rolling.</h2>
-    <iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+
+<div id="myDIV" class="header">
+  <h2>Gym Schedule Plan</h2>
+  <input type="text" id="userInput" placeholder="Enter a routine...">
+  <span onclick="newRoutine()" class="addBtn">Add</span>
+</div>
+
+<ul id="userList">
+</ul>
 
 <div class="push"></div>
 </div>
+<script src="/js/script.js"></script>
 
     <div class="navbar">
         <a href="home"><i class="fa fa-fw fa-home"></i></a>
         <a href="search"><i class="fa fa-fw fa-search"></i></a>
-        <a href="calendar"><i class="fa fa-calendar"></i></a>
+        <!-- <a href="calendar"><i class="fa fa-calendar"></i></a> -->
         <a href="profile"><i class="fas fa-fw fa-user"></i></a>
       </div>
 </body>
