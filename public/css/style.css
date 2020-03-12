@@ -55,12 +55,6 @@ html, body {
 	font-size: 30px;
 }
 
-/*COLORED HEADER/BOX ON PROFILE PAGE*/
-#headerBox{
-	width: 100%;
-	background-color: #C3C2DC;
-	padding: 100px; 
-}
 
 /*BACKGROUND COLOR*/
 /*need to fix gradient repeat*/
