@@ -25,9 +25,7 @@
 <div class="data"id="headerBox">
  <div id = Headerbox>
   <div class="size1">
-    <center>
-      Welcome 
-      </center>
+    <center><i>Welcome</i></center>
   </div>
 </div>
 </div>
@@ -47,7 +45,7 @@
 <h3>Level {{level}}</h3>
 
 <p class="size2">
-  <button id="button"><label for="file" style="cursor: pointer;" >
+  <button id="button"><label for="file" style="cursor: pointer; font-weight:normal;" >
     Upload a profile picture</label>
   </button>
   </p>
@@ -77,7 +75,8 @@ var loadFile = function(event) {
 <center>
  <a href="edit" class="size2"><button id="button">Edit Profile</button></a>
 </center>
-</div>
+</div> 
+{{!-- end of profileInfo class --}}
 
 <div class="push"></div>
 </div>
@@ -85,7 +84,7 @@ var loadFile = function(event) {
 <div class="navbar">
   <a href="home"><i class="fa fa-fw fa-home"></i></a>
   <a href="search"><i class="fa fa-fw fa-search"></i></a>
-  <!-- <a href="calendar"><i class="fa fa-calendar"></i></a> -->
+  <a href="calendar"><i class="fa fa-calendar"></i></a>
   <a href="profile"><i class="fas fa-fw fa-user"></i></a>
 </div>
 </body>

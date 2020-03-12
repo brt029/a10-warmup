@@ -12,7 +12,6 @@ var survey = require('./routes/survey');
 var profile = require('./routes/profile');
 var edit = require('./routes/edit');
 var level = require('./routes/level');
-// var home = require('./routes/home');
 
 var app = express();
 
@@ -52,9 +51,9 @@ app.get('/basic', function (req, res) {
 app.get('/beginner', function (req, res) {
 	res.render('beginner');
 });
-// app.get('/calendar', function (req, res) {
-// 	res.render('calendar');
-// });
+app.get('/calendar', function (req, res) {
+	res.render('calendar');
+});
 app.get('/cardio', function (req, res) {
 	res.render('cardio');
 });
@@ -82,7 +81,21 @@ app.get('/treadmill', function (req, res) {
 app.get('/weightlift', function (req, res) {
 	res.render('weightlift');
 });
-
+app.get('/abs', function (req, res) {
+	res.render('abs');
+});
+app.get('/shoulder', function (req, res) {
+	res.render('shoulder');
+});
+app.get('/back', function (req, res) {
+	res.render('back');
+});
+app.get('/triceps', function (req, res) {
+	res.render('triceps');
+});
+app.get('/chest', function (req, res) {
+	res.render('chest');
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

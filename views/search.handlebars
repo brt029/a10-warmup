@@ -15,36 +15,38 @@
   
   <div class="content">
     <div class="container">
-        <br>
+        {{!-- <br>
         <h3 style="font-family: georgia; font-weight: bold;">
-          Looking for Exercises?</h3>
+          Looking for Exercises?</h3> --}}
       </div>
 
-    <div class="container">
+    {{!-- <div class="container">
 <div class="center">
       <center>
 <img src="/pics/warmuplogo.png" alt="Warm Up">
 </center>
-</div></div>
+</div></div> --}}
 
-<div class="center">
-<div class="container">
-  <br>
-  <input type="text" placeholder="Search here..." id="search" required></div>
-  <div class="container">
-  <button id="button" type="button" onclick="searchWebsite()">Search</button>
+<div class="container"id="headerSearch">
+  <h5 style="font-size: 30px;">Looking for</h5>
+  <h5 style="font-size: 25px; line-height:12px">something <strong><i>specific?</i></strong></h5>
 </div>
 
+<div class="center">
+<div class="containerSearch">
+  <input type="text" placeholder="Search here..." id="search" required></div>
+  <button id="button" type="button" onclick="searchWebsite()">Search</button>
+  </div>
 
 <div class="push"></div>
 </div>
-</div>
+{{!-- </div> --}}
 <script src="/js/script.js"></script>
 
 <div class="navbar">
   <a href="home"><i class="fa fa-fw fa-home"></i></a>
   <a href="search"><i class="fa fa-fw fa-search"></i></a>
-  <!-- <a href="calendar"><i class="fa fa-calendar"></i></a> -->
+  <a href="calendar"><i class="fa fa-calendar"></i></a>
   <a href="profile"><i class="fas fa-fw fa-user"></i></a>
 </div>
 </body>
