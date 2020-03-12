@@ -271,7 +271,7 @@ ol li {
 .navbar a {
   /*border-radius: 2px;*/
   float: left;
-  padding: 15px;
+  padding: 10px;
   color: white; /* icons color*/
   text-decoration: none;
   font-size: 35px;
@@ -311,7 +311,7 @@ iframe{
 .content{
   min-height: 100%;
   /*margin-bottom: -100px 0;*/
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .push{
@@ -330,6 +330,7 @@ iframe{
   font-size: 30px;
   font-family: georgia;
   color: #413FB2;
+  line-height: 30px
   /*margin-top: 0;
   top: 100px;*/
 }
@@ -345,6 +346,7 @@ iframe{
   font-size: 16px;
   font-family: georgia;
   color: #6F6E85;
+  margin-left: 22px;
 }
 
 
