@@ -48,6 +48,26 @@ var sitePages = [
     {
         keyword: "leg",
         link: '/leg'
+    },
+     {
+        keyword: "abs",
+        link: '/abs'
+    },
+     {
+        keyword: "back",
+        link: '/back'
+    },
+     {
+        keyword: "chest",
+        link: '/chest'
+    },
+     {
+        keyword: "shoulder",
+        link: '/shoulder'
+    },
+     {
+        keyword: "triceps",
+        link: '/triceps'
     }
 ]
 
