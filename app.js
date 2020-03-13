@@ -66,9 +66,6 @@ app.get('/bikes', function (req, res) {
 app.get('/home', function (req, res) {
 	res.render('home');
 });
-app.get('/killer', function (req, res) {
-	res.render('killer');
-});
 app.get('/leg', function (req, res) {
 	res.render('leg');
 });
