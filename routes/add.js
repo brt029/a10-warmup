@@ -1,6 +1,6 @@
 var data = require("../data.json");
 
-exports.addUser = function(request, response) {    
+exports.addUser = function(request, response) { 
 	var name = request.query.name;
 	var email = request.query.email;
 	var username = request.query.username;
@@ -8,7 +8,8 @@ exports.addUser = function(request, response) { 
 	var gender = request.query.gender;
 	var height = request.query.height;
 	var weight = request.query.weight;
-	var newUser = {"name": name, "email": email, "username": username, "password": password, "exp": 0, "level": 1, "gender": gender, "height": height, "weight": weight};
+	var newUser = {"name": name, "email": email, "username": username, "password": password, "exp": 0, "level": 1, "levelPercent": 0,
+	"gender": gender, "height": height, "weight": weight};
 	data.users.push(newUser);
 	response.render('index');
 }

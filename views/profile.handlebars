@@ -44,6 +44,10 @@
 
 <h3>Level {{level}}</h3>
 
+<div class="progress" style="margin: 10px auto;width: 80%;">
+  <div class="progress-bar" role="progressbar" style="width: {{levelPercent}}%" aria-valuenow="{{levelPercent}}" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
 <p class="size2">
   <button id="button"><label for="file" style="cursor: pointer; font-weight:normal;" >
     Upload a profile picture</label>

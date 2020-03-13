@@ -11,27 +11,29 @@
      <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="calInit()">
   <div class="content">
 
-<div id="myDIV" class="header">
-  <h2>Gym Schedule Plan</h2>
-  <input type="text" id="userInput" placeholder="Enter a routine...">
-  <span onclick="newRoutine()" class="addBtn">Add</span>
-</div>
+    <div id="myDIV" class="header">
+      <h2>Gym Schedule Plan</h2>
+      <input type="text" id="userInput" placeholder="Enter a routine...">
+      <span onclick="newRoutine()" class="addBtn">Add</span>
+    </div>
 
-<ul id="userList">
-</ul>
+    <ul id="userList">
+    </ul>
 
-<div class="push"></div>
-</div>
-<script src="/js/script.js"></script>
+    <div class="push"></div>
+  </div>
 
-    <div class="navbar">
-        <a href="home"><i class="fa fa-fw fa-home"></i></a>
-        <a href="search"><i class="fa fa-fw fa-search"></i></a>
-        <a href="calendar"><i class="fa fa-calendar"></i></a>
-        <a href="profile"><i class="fas fa-fw fa-user"></i></a>
-      </div>
+
+  <div class="navbar">
+    <a href="home"><i class="fa fa-fw fa-home"></i></a>
+    <a href="search"><i class="fa fa-fw fa-search"></i></a>
+    <a href="calendar"><i class="fa fa-calendar"></i></a>
+    <a href="profile"><i class="fas fa-fw fa-user"></i></a>
+  </div>
+  
+  <script src="/js/script.js"></script>
 </body>
 </html>
